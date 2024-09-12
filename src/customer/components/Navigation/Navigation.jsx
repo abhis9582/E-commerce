@@ -14,6 +14,7 @@ import { navigation } from "./NavigationData";
 // import { useDispatch, useSelector } from "react-redux";
 import { deepPurple } from "@mui/material/colors";
 import { Link } from "react-alice-carousel";
+import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -21,7 +22,7 @@ function classNames(...classes) {
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   // const dispatch = useDispatch();
   // const { auth, cart } = useSelector((store) => store);
   // const [openAuthModal, setOpenAuthModal] = useState(false);
@@ -52,7 +53,8 @@ export default function Navigation() {
   // };
 
   const handleCategoryClick = (category, section, item, close) => {
-    // navigate(`/${category.id}/${section.id}/${item.id}`);
+    console.log(item, "ssff");
+    navigate(`/${category.id}/${section.id}/${item.id}`);
     close();
   };
 
@@ -443,9 +445,10 @@ export default function Navigation() {
                         }}
                       >
                         <MenuItem>
-                          {/* {auth.user?.role === "ROLE_ADMIN"
-                            ? "Admin Dashboard"
-                            : "My Orders"} */}
+                          Profile
+                        </MenuItem>
+                        <MenuItem onClick={()=>navigate("/account/order")}>
+                          My Orders
                         </MenuItem>
                         <MenuItem onClick={handleLogout}>Logout</MenuItem>
                       </Menu>

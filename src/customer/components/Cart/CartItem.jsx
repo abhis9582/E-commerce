@@ -10,7 +10,7 @@ const CartItem = () => {
 
             <div className='flex items-center'>
                 <div className='w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem]'>
-                    <img className='w-full h-full object-cover object-top' src="assets/1_12.jpg" alt="" />
+                    <img className='w-full h-full object-cover object-top' src="/assets/1_12.jpg" alt="" />
                 </div>
                 <div className='ml-5 space-y-1'>
                     <p className='font-semibold'>Men Slim Mid Rise Black Jeans</p>

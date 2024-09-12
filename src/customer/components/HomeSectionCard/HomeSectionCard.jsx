@@ -6,7 +6,7 @@ const HomeSectionCard = ({ product }) => {
             <div 
             className="h-[13rem] w-[10rem]" >
                 <img 
-                className="object-cover object-top w-full h-full" src={product.image}
+                className="object-cover object-top w-full h-full mt-5" src={product.image}
                 alt="" />
             </div>
             <div 

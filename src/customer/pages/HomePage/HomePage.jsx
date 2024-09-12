@@ -11,12 +11,10 @@ const HomePage = () => {
                <HomeSectionCarosel data={mensKurta} sectionName={"Mens's Kurta"}/>
                <HomeSectionCarosel data={mensKurta}sectionName={"Mens's Shoes"}/>
                <HomeSectionCarosel data={mensKurta} sectionName={"Mens's Shirts"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"Woens's Sari"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"Woens's Kurta"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"Woens's Dress"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"woens's Tops"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"Mens's Kurta"}/>
-               <HomeSectionCarosel data={mensKurta} sectionName={"Mens's Kurta"}/>
+               <HomeSectionCarosel data={mensKurta} sectionName={"Womens's Sari"}/>
+               <HomeSectionCarosel data={mensKurta} sectionName={"Womens's Kurta"}/>
+               <HomeSectionCarosel data={mensKurta} sectionName={"Womens's Dress"}/>
+               <HomeSectionCarosel data={mensKurta} sectionName={"Womens's Tops"}/>
             </div>
         </div>
     )
